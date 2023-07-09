@@ -6,6 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    steps:
     - name: npm install
       run: npm i
     
