@@ -1,0 +1,13 @@
+name: unit test
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    - name: npm install
+      run: npm i
+    
+    - name: run unit tests
+      run: npm run test
