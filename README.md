@@ -1,6 +1,6 @@
 # eos-osc-mock
 
-it's a simple osc server that mimics parts the etc eos osc api. this repo is maintained by [sndwrks](https://sndwrks.xyz/haze-watch). shameless self plug, checkout our haze watch product currently in PoC at the Public.
+it's a simple osc server that mimics parts the etc eos osc api. this repo is maintained by [sndwrks](https://sndwrks.xyz/haze-watch).
 
 it has a companion qlab file and the show control manual that is implemented in the code.
 
