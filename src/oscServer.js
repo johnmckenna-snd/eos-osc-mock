@@ -5,13 +5,13 @@ import { beginLogging } from '@sndwrks/lumberjack';
 import config from '../config/config.js';
 import { messageParser } from './message-parsers/index.js';
 
-const { LOCAL_PORT, REMOTE_PORT } = config.server;
+const {
+  LOCAL_PORT, LOCAL_ADDRESS, REMOTE_PORT, REMOTE_ADDRESS,
+} = config.server;
 
 const logger = beginLogging({ name: 'oscServer.js' });
 
 const currentNetworkInterfaces = networkInterfaces();
-
-logger.debug(currentNetworkInterfaces);
 
 const ipv4Addresses = Object.values(currentNetworkInterfaces)
   .flat()
@@ -19,9 +19,9 @@ const ipv4Addresses = Object.values(currentNetworkInterfaces)
   .map((netInterface) => netInterface.address);
 
 const oscServer = new osc.UDPPort({
-  localAddress: '0.0.0.0',
+  localAddress: LOCAL_ADDRESS,
   localPort: LOCAL_PORT,
-  remoteAddress: '0.0.0.0',
+  remoteAddress: REMOTE_ADDRESS,
   remotePort: REMOTE_PORT,
 });
 
