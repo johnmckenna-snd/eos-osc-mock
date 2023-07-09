@@ -55,3 +55,7 @@ the etc eos osc command library is pretty large, so not everything has been impl
 | `/eos/chan/<number>/max` | 🤷 |
 | `/eos/chan/<number>/+%` | 🤷 |
 | `/eos/chan/<number>/-%` | 🤷 |
+
+## development
+
+if you would like to contribute please feel free! just make sure to use the linter.
