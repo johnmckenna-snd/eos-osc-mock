@@ -1,0 +1,4 @@
+NODE_ENV=development
+LOCAL_PORT=57121
+REMOTE_PORT=53000
+SERVICE_NAME=eos-osc-mock

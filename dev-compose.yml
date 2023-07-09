@@ -1,0 +1,19 @@
+version: '3.7'
+
+networks:
+  main:
+    name: node-express-boilerplate-dev
+    driver: bridge
+
+services:
+  server:
+    container_name: node-express-boilerplate-server-dev
+    image: node:18-alpine
+    environment:
+      - NODE_ENV
+    networks:
+      - main
+    restart: always
+    volumes:
+      - ".:/app"
+    command: npm run dev --prefix /app
