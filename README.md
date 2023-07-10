@@ -1,5 +1,7 @@
 # eos-osc-mock
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/6a7198e7294d8269f6d0/maintainability)](https://codeclimate.com/github/johnmckenna-snd/eos-osc-mock/maintainability)[!Unit Test](https://github.com/johnmckenna-snd/eos-osc-mock/actions/workflows/unit-test.yml/badge.svg)
+
 it's a simple osc server that mimics parts the etc eos osc api. this repo is maintained by [sndwrks](https://sndwrks.xyz/haze-watch).
 
 it has a companion qlab file and the show control manual that is implemented in the code.
